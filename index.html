@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <!-- bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="style.css" />
+  <!--font Orbitron  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- font Nanum Myeongjo-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/html/idext.html" id="logo"><span>T</span>ravel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/html/idext.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Servises">Servises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallary">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search" />
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- home section start -->
+    <div class="home">
+      <div class="content">
+        <h6>Welcome To World</h6>
+        <h4>Visit <span class="changecontent"></span></h4>
+        <p>Have Stories To Tell Not Stuff To Show.</p>
+        <a href="#book">Book Place</a>
+      </div>
+    </div>
+    <!-- home section end -->
+
+    <!-- section book start -->
+    <section class="book" id="book">
+      <div class="container">
+        <div class="main-text">
+          <h2><span>B</span>ook</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-5 py-3 0y-md-0">
+            <div class="card">
+              <img src="images/book-img.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-5 py-3 py-md-0">
+            <form action="" name="form" id="Form">
+              <input name="place"  type="text" class="form-control" id="Whereto" placeholder="Where To" pattern="[a-z]{4,20}" /><br />
+              <input name="days"  type="text" class="form-control" id="Howmany" placeholder="How Many" pattern="[1-9]{0,2}" /><br />
+              <input type="date" class="form-control" placeholder="Arrivals"/><br />
+              <input type="date" class="form-control" placeholder="Leaving"/><br />
+              <textarea class="form-control" rows="5" name="text"
+                placeholder="Enter Your Name & Details"></textarea><br />
+              <input type="submit" value="Book Now" class="submit"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section book end -->
+
+    <!-- section pakages start -->
+    <section class="pakages">
+      <div class="container">
+        <div class="main-txt">
+          <h2><span>P</span>ackeges</h2>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/uk.png" alt="" />
+              <h3>United Kingdom</h3>
+              <p>
+                One of the most powerful states in the world, the UK is
+                flooded with tourists throughout the year. A cultural and
+                historical destination, the country is famous for its Scottish
+                landscapes, British royal family.The north and west regions of
+                UK consist of sharp mountain ranges, valleys, and high
+                grounds.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a class="book-now" href="#book">Book Now</a>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/france.png" alt="" />
+              <h3>France</h3>
+              <p>
+                France is one of the oldest nations on Earth and the most
+                ethnically diverse country in Europe. These deep and broad
+                influences have made France a world leader throughout history
+                in different aspects of culture, including cuisine,
+                philosophy, music, art, film, fashion, literature and sport.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a class="book-now" href="#book">Book Now</a>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/pakistan.png" alt="" />
+              <h3>Pakistan</h3>
+              <p>
+                Pakistan is home to a number of UNESCO world heritage sites
+                like, Archaeological Ruins at Moenjodaro, Buddhist Ruins of
+                Takht-i-Bahi and Neighbouring City Remains at Sahr-i-Bahlol,
+                Fort and Shalamar Gardens in Lahore, Historical Monuments at
+                Makli, Thatta, Rohtas Fort and Taxila.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a class="book-now" href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/Seville-Spain.webp" alt="" />
+              <h3>Spain</h3>
+              <p>
+                Every year, thousands of tourists choose to travel to Spain to
+                discover the authentic local culture of the country. Spaniards
+                have a very relaxed and pleasant lifestyle. Especially in the
+                coastal parts of Spain, life is more colorful. This is why the
+                seaside resorts are known as the best holiday cities in Spain.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a class="book-now" href="#book">Book Now</a>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/italy.png" alt="" />
+              <h3>Italy</h3>
+              <p>
+                Italy is also the country with the highest number of UNESCO
+                World Heritage Sites in the world (58). Out of Italy's 58
+                heritage sites, 53 are cultural and 5 are natural. The Roman
+                Empire, Middle Ages, Renaissance and the following centuries
+                of the history of Italy have left many cultural artifacts that
+                attract tourists.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a class="book-now" href="#book">Book Now</a>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/india.png" alt="" />
+              <h3>India</h3>
+              <p>
+                India is a country that attracts millions of tourists every
+                year and is considered one of the most popular tourist
+                destinations in the world. These visitors are attracted to its
+                natural beauty and cultural heritage. It has many historic
+                sites as well like the Taj Mahal, Golden Temple, Red Fort,
+                kashmeer, Goa, Kerala,ect..
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a class="book-now" href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section pakages end -->
+
+    <!-- section servies start -->
+    <section class="Services" id="Servises">
+      <div class="container">
+        <div class="main-txt">
+          <h2><span>S</span>ervices</h2>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Affordable Hotel</h3>
+                <p>
+                  We believe that everyone deserves a comfortable and
+                  enjoyable stay without breaking the bank. Our affordable
+                  hotel is the perfect choice for budget-conscious travelers
+                  who seek quality accommodations at an unbeatable
+                  priceDespite our affordable rates, we prioritize your
+                  comfort and satisfaction. Our well-appointed rooms are
+                  designed.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Food and Drink</h3>
+                <p>
+                  At our establishment, we understand the importance of
+                  satisfying your taste buds and providing a memorable dining
+                  experience. Our talented chefs meticulously craft a diverse
+                  menu featuring a fusion of flavors, using fresh and locally
+                  sourced ingredients whenever possible. From international
+                  cuisine to local specialties, there's something to please
+                  every
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Safty Guide</h3>
+                <p>
+                  Safety is our top priority, and we are committed to ensuring
+                  your well-being throughout your journey. Before you embark
+                  on your trip, research your destination thoroughly.
+                  Understand the local laws, customs, and any potential risks
+                  or travel advisories. Plan your itinerary accordingly and
+                  make informed decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Around the World</h3>
+                <p>
+                  We believe that everyone deserves a comfortable and
+                  enjoyable stay without breaking the bank. Our affordable
+                  hotel is the perfect choice for budget-conscious travelers
+                  who seek quality accommodations at an unbeatable
+                  priceDespite our affordable rates, we prioritize your
+                  comfort and satisfaction. Our well-appointed rooms are
+                  designed.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Fastest Travel</h3>
+                <p>
+                  At our establishment, we understand the importance of
+                  satisfying your taste buds and providing a memorable dining
+                  experience. Our talented chefs meticulously craft a diverse
+                  menu featuring a fusion of flavors, using fresh and locally
+                  sourced ingredients whenever possible. From international
+                  cuisine to local specialties, there's something to please
+                  every
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Adventure</h3>
+                <p>
+                  Safety is our top priority, and we are committed to ensuring
+                  your well-being throughout your journey. Before you embark
+                  on your trip, research your destination thoroughly.
+                  Understand the local laws, customs, and any potential risks
+                  or travel advisories. Plan your itinerary accordingly and
+                  make informed decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section servies end -->
+
+    <!-- section gallery start -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+        <div class="main-txt">
+          <h2><span>G</span>allary</h2>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g1.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g2.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g3.png" alt="" height="230px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g4.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g5.png" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g6.png" alt="" height="230px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g7.jpg" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g8.jpg" alt="" height="230px" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/g9.webp" alt="" height="230px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section gallery end -->
+
+    <!-- section about start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="main-txt">
+          <h2>About<span>Us</span></h2>
+        </div>
+        <div class="row" style="margin-top: 50px">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="images/about-img.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Agency Work</h2>
+            <p>
+              Customer Consultation: When a customer approaches a travel
+              agency, the travel agent engages in a consultation to understand
+              their preferences, budget, and specific requirements. This helps
+              the agent recommend suitable destinations, accommodations,
+              transportation options, and activities.Itinerary Planning: Based
+              on the customer's inputs, the travel agent designs a customized
+              itinerary, suggesting the best routes, attractions, and
+              experiences to fulfill the traveler's desires. The agent takes
+              into account factors such as travel duration, available dates,
+              and any special requests.Booking Arrangements: Once the
+              itinerary is finalized, the travel agent proceeds with making
+              the necessary bookings. This includes securing flights, train or
+              bus tickets, hotel accommodations, car rentals.
+            </p>
+            <button id="about-btn">Read More...</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section about end -->
+
+    <!-- footer start -->
+    <footer id="footer">
+      <h2><span>T</span>ravel</h2>
+      <p>Have Stories To Tell Not Stuff To Show.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By Shafeeque</p>
+      </div>
+      <div class="copyright">
+        <p>&copy;CopyRight.||All Right Reaserved</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </header>
+
+  <!--bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- js -->
+  <script src="scrpit.js"></script>
+</body>
+
+</html>
